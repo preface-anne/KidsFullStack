@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  background: gainsboro;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .2rem solid;
+
+  animation: blinkTextCursor 500ms steps(20) infinite normal;
+}
+
+/* animation cursor */
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
