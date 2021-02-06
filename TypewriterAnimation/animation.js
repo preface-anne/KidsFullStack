@@ -1,11 +1,10 @@
-//The charAt() method returns the character at the specified index in a string
-
 var i = 0;
 var txt = 'Lorem ipsum typing effect!'; 
 var speed = 100; 
  
 function typeWriter() {
   if (i < txt.length) {
+    //The charAt() method returns the character at the specified index in a string
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
     //loop effect - Executes a function, after waiting a specified number of milliseconds.
@@ -19,3 +18,5 @@ window.onload = function() {
   typeWriter();
 };
 
+//variations - different variations 
+//carousel 
