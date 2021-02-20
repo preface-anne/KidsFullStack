@@ -38,7 +38,7 @@ h2{
 
 #cloud2 {
   position: absolute;
-  top: 600px;
+  top: 650px;
   right: 100px;
   z-index: -1;
   width: 800px;
@@ -47,7 +47,7 @@ h2{
 
 #dragon {
   position: absolute;
-  top: 650px;
+  top: 600px;
   right: 280px;
   z-index: 1;
   width: 550px;
