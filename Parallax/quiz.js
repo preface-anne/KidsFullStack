@@ -6,7 +6,6 @@ window.addEventListener("scroll", function() {
   document.querySelector("#para1").style.transform = `translateY(${distance * 0.1}px)`;
   setTimeout(() => {
   	document.querySelector("#dragon").classList.add("animate-me");
-  	document.querySelector("#cloud1").classList.add("animate-me2");
   	document.querySelector("#cloud2").classList.add("animate-me3");
   }, 80);
 });
