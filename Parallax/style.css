@@ -22,6 +22,7 @@ h2{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   z-index: -2;
   animation: fadeIn 1.5s ease-in-out;
@@ -29,38 +30,32 @@ h2{
 
 #cloud1 {
   position: absolute;
-  top: 500px;
+  top: 400px;
   z-index: -1;
-  width: 800px;
+  width: 1000px;
+  opacity: 0.8;
 }
 
 #cloud2 {
   position: absolute;
-  top: 900px;
+  top: 800px;
   right: 100px;
-  z-index: -1;
-  width: 500px;
-}
-
-#cloud3 {
-  position: absolute;
-  top: 1400px;
-  left: 300px;
-  z-index: -1;
-  width: 600px;
+  z-index: -3;
+  width: 800px;
+  opacity: 1;
 }
 
 #dragon {
   position: absolute;
-  top: 850px;
+  top: 1000px;
   right: 280px;
   z-index: 1;
-  width: 800px;
+  width: 550px;
   transition: 1000ms;
 }
 
 #para1 {
-  margin-top: 80px;
+  margin-top: 1000px;
   display: flex;
   justify-content: center;
   z-index: 2;
@@ -73,15 +68,11 @@ h2{
 }
 
 .animate-me2 {
-  animation: slideRight 90s infinite;
+  animation: slideRight 100s infinite;
 }
 
 .animate-me3 {
   animation: slideLeft 80s infinite;
-}
-
-.animate-me4 {
-  animation: slideRight 100s infinite;
 }
 
 @keyframes fadeIn {
@@ -107,19 +98,25 @@ h2{
 
 @keyframes slideRight {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
 }
 
-@keyframes slideleft {
+@keyframes slideLeft {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
 }
 
