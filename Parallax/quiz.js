@@ -1,11 +1,12 @@
 window.addEventListener("scroll", function() {
+
   const distance = window.scrollY;
+
   document.querySelector("#background").style.transform = `translateY(${distance * 1.5}px)`;
-  document.querySelector("#cloud1").style.transform = `translateY(${distance * 0.2}px)`;
-  document.querySelector("#cloud2").style.transform = `translateY(${distance * 0.2}px)`;
+  document.querySelector("#bigCloud").style.transform = `translateY(${distance * 1.1}px)`;
+  document.querySelector("#smallCloud").style.transform = `translateY(${distance * 1.2}px)`;
   document.querySelector("#para1").style.transform = `translateY(${distance * 0.1}px)`;
-  setTimeout(() => {
-  	document.querySelector("#dragon").classList.add("animate-me");
-  	document.querySelector("#cloud2").classList.add("animate-me3");
-  }, 80);
+  document.querySelector("#row1").style.transform = `translateY(${distance * 0.3}px)`;
+  document.querySelector("#row2").style.transform = `translateY(${distance * 0.2}px)`;
+
 });

@@ -13,8 +13,22 @@ body {
   color: #eee;
 }
 
-h2{
+h2 {
   font-size: 25px;
+}
+
+#moon {
+  width: 10%;
+}
+
+#para2 {
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  font-size: 20px;
+  padding: 150px;
+  text-align: justify;
 }
 
 #background {
@@ -29,48 +43,87 @@ h2{
 }
 
 #cloud1 {
+  margin-top: -1000px; 
   position: absolute;
-  top: 400px;
-  z-index: -1;
-  width: 1000px;
-  opacity: 0.8;
+  z-index: -1000;
+  width: 800px;
+  opacity: 0.6;
   animation: slideRight 100s infinite;
+  filter: drop-shadow(5px 5px 5px #222222);
 }
 
 #cloud2 {
   position: absolute;
-  top: 650px;
+  margin-top: -1200px;
   right: 10px;
-  z-index: -3;
-  width: 800px;
-  opacity: 0.6;
+  z-index: -1;
+  width: 500px;
+  opacity: 0.8;
+  animation: slideLeft 50s infinite;
+  filter: drop-shadow(5px 5px 5px #222222);
 }
 
-#dragon {
+/* #dragon {
   position: absolute;
   margin-top: 450px;
-  right: 280px;
+  right: 330px;
   z-index: 1;
-  width: 550px;
+  width: 400px;
   transition: 1000ms;
+  filter: drop-shadow(5px 5px 5px #222222);
+} */
+
+#row1{
+  z-index: 0;
+  position: absolute;
+  margin-top: 450px;
+  filter: drop-shadow(5px 5px 5px #222222);
+}
+
+#row2{
+  z-index: 1;
+  position: absolute;
+  margin-top: 500px;
+}
+
+#column {
+  float: left;
+  width: 50%;
+  margin: 0px;
+}
+
+#ground1, #ground2, #ground3, #ground4 {
+  width: 100%;
+}
+
+#ground1, #ground2 {
+  opacity: 0.8;
+  height: 500px;
+}
+
+#ground3, #ground4 {
+  opacity: 0.6;
+  height: 600px;
+}
+
+#ground2, #ground3 {
+  transform: scaleX(-1);
 }
 
 #para1 {
-  margin-top: 850px;
+  background-color: black;
+  margin-top: 1250px;
   display: flex;
   justify-content: center;
   z-index: 2;
-  font-size: 23px;
-  padding: 40px;
+  font-size: 20px;
+  padding: 150px;
+  text-align: justify;
 }
 
-.animate-me {
+/* .animate-me {
   animation: bounceIn 5s infinite;
-}
-
-.animate-me3 {
-  animation: slideLeft 150s infinite;
-}
+} */
 
 @keyframes fadeIn {
   from {
@@ -81,7 +134,7 @@ h2{
   }
 }
 
-@keyframes bounceIn {
+/* @keyframes bounceIn {
   0% {
     transform: scale(0.9);
   }
@@ -91,7 +144,7 @@ h2{
   100% {
     transform: scale(0.9);
   }
-}
+} */
 
 @keyframes slideRight {
   0% {
