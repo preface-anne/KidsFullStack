@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function() {
 
-  const distance = window.scrollY;
+  var distance = window.scrollY;
 
   document.querySelector("#background").style.transform = `translateY(${distance * 1.5}px)`;
   document.querySelector("#bigCloud").style.transform = `translateY(${distance * 1.1}px)`;

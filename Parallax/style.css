@@ -11,6 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   color: #eee;
+  transition: .15s ease-in-out;
+  transition-property: background-position;
 }
 
 h2 {
@@ -25,7 +27,8 @@ h2 {
   margin-top: -100px;
   display: flex;
   justify-content: center;
-  z-index: 2;
+  //z-index: 2;
+  transform: translateZ(2);
   font-size: 20px;
   padding: 150px;
   text-align: justify;
@@ -38,14 +41,16 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  z-index: -2;
-  animation: fadeIn 1.5s ease-in-out;
+  transform: translateZ(-2);
+  //z-index: -2;
+  //animation: fadeIn 1.5s ease-in-out;
 }
 
 #cloud1 {
   margin-top: -1000px; 
   position: absolute;
-  z-index: -1000;
+  transform: translateZ(-3);
+  //z-index: -3;
   width: 800px;
   opacity: 0.6;
   animation: slideRight 100s infinite;
@@ -56,7 +61,8 @@ h2 {
   position: absolute;
   margin-top: -1200px;
   right: 10px;
-  z-index: -1;
+  transform: translateZ(-1);
+  //z-index: -1;
   width: 500px;
   opacity: 0.8;
   animation: slideLeft 50s infinite;
@@ -74,14 +80,16 @@ h2 {
 } */
 
 #row1{
-  z-index: 0;
+  transform: translateZ(0);
+  //z-index: 0;
   position: absolute;
   margin-top: 450px;
   filter: drop-shadow(5px 5px 5px #222222);
 }
 
 #row2{
-  z-index: 1;
+  transform: translateZ(1);
+  //z-index: 1;
   position: absolute;
   margin-top: 500px;
 }
