@@ -1,19 +1,29 @@
-body {
-  font-family: sans-serif;
-  background: gainsboro;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  font-size: 2rem;
-  letter-spacing: .2rem;
+body {
+	margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background: gainsboro;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+p, h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: .2rem solid;
+}
 
-  animation: blinkTextCursor 500ms steps(20) infinite normal;
+h1 {
+	border-right: 0.2px solid;
+	animation: blinkTextCursor 500ms steps(20) infinite normal;
 }
 
 /* animation cursor */
@@ -24,4 +34,19 @@ p {
   to {
     border-right-color: transparent;
   }
+}
+
+img {
+	margin-top: 10px;
+	width: 80%;
+  height: 500px;
+  /* after setting the height and width, 
+  use object-fit: cover to make the gif/img fit the container */
+  object-fit: cover;
+}
+
+#movies {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
 }
