@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(event){
       // text exists! start typewriter animation
      typeWriter(dataText[i], 0, function(){
        // after callback (and whole text has been animated), start next text
-       StartTextAnimation(i + 1);
+        StartTextAnimation(i + 1);
      });
     }
 
@@ -51,7 +51,9 @@ document.addEventListener('DOMContentLoaded', function(event){
     }
   }
 
-  // start the text animation
-  StartTextAnimation(0);
+  // start the text animation 
+  // once the list of movies are done, repeat the animation after 100 milliseconds 
+  // repeat forever 
+  setTimeout(StartTextAnimation(0), 50);
 
 });
