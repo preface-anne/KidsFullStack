@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 5px;
+	transition: 1s;
+}
+
+img:hover {
+	height: 400px;
+	transition: 1s;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
