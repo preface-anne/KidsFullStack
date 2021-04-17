@@ -18,7 +18,7 @@ img {
 	object-fit: cover;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1500px) {
 	img {
 		height: 400px;
 	}
