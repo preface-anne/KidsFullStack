@@ -30,3 +30,9 @@ h1 {
 .row > p {
 	padding: 40px;
 }
+
+.back {
+	height: 50px;
+	bottom: 30px;
+	right: 30px;
+}
