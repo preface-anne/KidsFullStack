@@ -132,6 +132,7 @@ h2 {
 	position: relative;
 	display: flex;
 	justify-content: center;
+	padding-top: 40px;
 }
 
 #entirebanner2 > div {
@@ -156,6 +157,10 @@ h2 {
 	justify-content: space-evenly;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
 
 
 
