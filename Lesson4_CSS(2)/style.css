@@ -1,0 +1,167 @@
+/*CSS Flexbox
+CSS Position
+CSS Z-index
+CSS Display*/
+
+/*Selects all elements*/
+/*Remove default from some browsers*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+/*Selector - call an HTML tag */
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+/*Call an HTML tag element with an ID*/
+/*ID's are unique - for one element*/
+#banner {
+	width: 100%;
+}
+
+#logo {
+	height: 300px;
+	/*lesson4*/
+	left: 10px;
+	top: -70px;
+	position: absolute;
+}
+
+#menu {
+	height: 30px;
+	/*lesson4*/
+	padding-left: 10px;
+	padding-bottom: 2px;
+}
+
+#signInLogo {
+	height: 40px;
+}
+
+#button1 {
+	text-align: center;
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+	padding: 8px;
+}
+
+.place {
+	height: 330px;
+	width: 330px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+#button2 {
+	text-align: center;
+	border-radius: 20px;
+	padding: 8px;
+	/*lesson4*/
+	color: black;
+	background-color: white;
+}
+
+#banner2 {
+	height: 400px;
+	width: 1100px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.host {
+	/*lesson4*/
+	color: white;
+}
+
+ol, li {
+	list-style-type: none;
+	/*lesson4*/
+	padding: 10px
+}
+
+/*everything below the line is for lesson4*/
+#entirebanner {
+	position: relative;
+}
+
+#signIn {
+	position: absolute;
+	right: 50px;
+	top: 55px;
+	background-color: white;
+	border-radius: 20px;
+}
+
+#entirebanner > h1 {
+	position: absolute;
+	top: 300px;
+	left: 56px;
+}
+
+#entirebanner > h2 {
+	position: absolute;
+	top: 525px;
+	left: 56px;
+}
+
+.squares {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+h2 {
+	padding: 40px;
+	text-align: center;
+}
+
+.squares > div > p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#entirebanner2 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+#entirebanner2 > div {
+	position: absolute;
+	right: 150px;
+}
+
+#entirebanner2 div > p {
+	position: absolute;
+	right: 100px;
+	top: 100px;
+}
+
+#entirebanner2 > div > #button2 {
+	position: absolute;
+	right: 167px;
+	top: 160px;
+}
+
+#getaways {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
