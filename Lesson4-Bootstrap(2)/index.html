@@ -1,0 +1,159 @@
+<!-- Bootstrap Flexbox
+Bootstrap Cards 
+Bootstrap Accordion 
+Bootstrap Display
+Bootstrap Tooltip -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pixarbnb</title>
+	<!-- CSS connection -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Link to Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+	<!-- Bootstrap CSS Link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Bootstrap JS Link -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+	<!-- Bootstrap for Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- JQuery link -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<!-- Link to JS file -->
+	<script type="text/javascript" src="script.js"></script>
+	<!-- For responsiveness  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<div id="topbanner">
+		<img id="logo" src="https://cdn.freebiesupply.com/images/thumbs/2x/pixar-logo.png">
+		<img id="banner" src="https://i.pinimg.com/originals/07/27/bc/0727bcf6a4cd4edf382177427fc9c4a9.jpg">
+	</div>
+
+	<h2>Live anywhere</h2>
+
+	<!-- cards, flexbox -->
+	<div class="container">
+		<div class="row d-flex justify-content-around">
+			<div class="col-xs-12 col-md-6 col-lg-4 border-0">
+				<img class="place card-img-top" src="https://www.atomic-ranch.com/wp-content/uploads/2018/06/z102_103b_cs_bg.promo16.197.jpg">
+				<div class="card-body">
+					<p class="card-title font-weight-bold">Incredibles</p>
+					<p class="card-text">The house originally belonged to businessman Winston Deavor who owned many houses and gave the Parr's this residence. This building was an upscale mansion designed for the family's superhero and mundane activities, as it contained a remote-control features, surveillance systems and several hidden entrances.</p>
+					<a href="#" class="btn btn-outline-secondary">Learn more</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4 card border-0">
+				<img class="place card-img-top" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F06%2Fmcdwall_ec063-2000.jpg">
+				<div class="card-body">
+					<p class="card-title font-weight-bold">WALL-E</p>
+					<p class="card-text">The last active WALL-E unit still uses one of these trucks as his home after 700 years. Because the other WALL-E's are no longer active and not in the truck, there is a lot of free space inside. WALL-E has placed all the interesting items he has found from the mountains of trash inside the truck.</p>
+					<a href="#" class="btn btn-outline-secondary">Learn more</a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-4 card border-0">
+				<img class="place card-img-top" src="https://www.gannett-cdn.com/-mm-/d2791cc33862a5092dfe7fe0fbbee8ae43937cb8/c=651-0-3655-1697/local/-/media/2015/11/15/USATODAY/USATODAY/635832148141270323-family-silo-exc.jpg">
+				<div class="card-body">
+					<p class="card-title font-weight-bold">The Good Dinosaur</p>
+					<p class="card-text">Explore what dinosaurs represent in the present day. The background for the film is based on various American landscapes. Arlo is designed to look distinct and relatable, in order to connect with audiences. In addition, it pays homage to Western genre in its themes, character representation, and western North American landscapes.</p>
+					<a href="#" class="btn btn-outline-secondary">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<img id="banner2" src="https://64.media.tumblr.com/2e6bd3f4eb72de230aa3b9eba92e23ea/f5c172e184392d5a-c9/s1280x1920/20fe4c195afd769f3ee2a5caf8a3c098a958bd30.jpg">
+			</div>
+		</div>
+	</div>
+
+	<h2>Discover Experiences</h2>
+	
+	<!-- accordion -->
+	<div class="container">
+		<div class="accordion accordion-flush row d-flex justify-content-around" id="accordionFlushExample">
+			<div class="accordion-item col-xs-12 col-md-6 col-lg-4 border-0">
+				<h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						<img class="place" src="https://images.theconversation.com/files/85777/original/image-20150619-3343-1gs9jjj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop">
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p class="font-weight-bold">Tour around with Riley's Long <br> Term Memory with Joy</p>
+						<p class="description">Joy is smart, boisterous, hyperactive, exuberant, outgoing, and fiercely optimistic. The smallest spark of positivity makes her burst with excitement. She always sees the good in everything, which, on the flip side, causes her to be somewhat oblivious to the other, sad aspect of things.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item col-xs-12 col-md-6 col-lg-4 border-0">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						<img class="place" src="https://static.wikia.nocookie.net/shipping/images/9/9e/Imector.jpg/revision/latest?cb=20190319151500">
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p class="font-weight-bold">Watch Imelda and Hector <br> Perform live in the Afterlife</p>
+						<p class="description">When she was a young woman, Imelda met and fell in love with aspiring musician, Héctor Rivera through their love and talent of music. The two of them eventually married one another. Héctor loved Imelda very much, he wrote "Un Poco Loco" for her and "Remember Me" for their daughter.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item col-xs-12 col-md-6 col-lg-4 border-0">
+				<h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+						<img class="place" src="https://static.wikia.nocookie.net/disney/images/5/5a/Monsters-inc-disneyscreencaps.com-9782.jpg/revision/latest/top-crop/width/360/height/450?cb=20200609162910">
+					</button>
+				</h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<p class="font-weight-bold">Learn how to make people <br> laugh with Mike</p>
+						<p class="description">Goofy, caring, loyal. Mike is a very giving person, and is always willing to help his friends if they need him. He is proud and confident, and he is as devoted to his work as he is to Sulley. Mike is outgoing and funny, despite his serious outlook on training Sulley to be the best Scarer.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2 id="getaways">Inspiration for future getaways</h2>
+	<p id="hover">(try hovering on the locations below to see some movie quotes!)</p>
+
+	<div class="container">
+		<div class="row d-flex justify-content-around">
+			<div class="col-xs-4 col-md-4 col-lg-4">
+				<!-- KP - HTML Syntax (II) -->
+				<!-- unordered lists -->
+				<ul>
+					<!-- tooltip -->
+					<li data-toggle="tooltip" title="You are a toy!">Toy Story <br> Ohio, USA</li>
+					<li data-toggle="tooltip" title="Do I look stupid to you?">A Bug's Life <br> Ant Island</li>
+					<li data-toggle="tooltip" title="When life gets you down, do you wanna know what you’ve gotta do? Just keep swimming.">Finding Nemo <br> Sydney, Australia</li>
+					<li data-toggle="tooltip" title="Ka-Chow!">Cars <br> Route 66, Arizona</li>
+				</ul>
+			</div>
+			<div class="col-xs-4 col-md-4 col-lg-4">
+				<!-- ordered lists -->
+				<ol>
+					<li data-toggle="tooltip" title="Not everyone can become a great artist, but a great artist can come from anywhere.">Ratatouille <br> Paris, France</li>
+					<li data-toggle="tooltip" title="I want my freedom!">Brave <br> Scotland</li>
+					<li data-toggle="tooltip" title="I hope there's a little magic left in you.">Onward <br> New Mushroomton</li>
+					<li data-toggle="tooltip" title="We're In The Business Of Inspiration, Joe, But It's Not Often We Find Ourselves Inspired.">Soul <br> New York City, USA</li>
+				</ol>
+			</div>
+			<div class="col-xs-4 col-md-4 col-lg-4">
+				<ol>
+					<li data-toggle="tooltip" title="We can go anywhere, do anything! We just got to stick together.">Luca <br> Italian Rivera</li>
+					<li data-toggle="tooltip" title="I have to sing, I have to play. The music, it's not just in me, it is me. When life gets me down, I play my guitar.">Coco <br> Santa Cecelia, Mexico</li>
+					<li data-toggle="tooltip" title="The most boring thing ever">The Good Dinosaur <br> North America, Pangae</li>
+					<li data-toggle="tooltip" title="Adventure is out there!">Up <br> Angel Falls, South America</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

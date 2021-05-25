@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.one {
+	background-color: #FFF6D4;
+	border: 1px dotted black;
+}
+
+.container-md {
+	background-color: #BDD5EF;
+	border: 1px dotted black;
+}
+
+.container-lg {
+	background-color: #E6D5FF;
+	border: 1px dotted black;
+}
+
+.container-fluid {
+	background-color: #AFD5AA;
+	border: 1px dotted black;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.row > div {
+	background-color: pink;
+	border: 1px dotted black;
+}
+
+.card {
+	height: 550px;
+}
+
+.accordion {
+	width: 90%;
+	background-color: #FFF6D4;
+}
+
+.list-inline-item > a {
+	text-decoration: none;
+	color: black;
+}
